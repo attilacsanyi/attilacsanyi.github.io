@@ -1,0 +1,191 @@
+@import "settings";
+@import "foundation";
+//@import "foundation/functions";
+
+//$include-html-media-classes: $include-html-classes;
+//$include-html-type-classes: $include-html-classes;
+
+// My Kuler colors: 
+// $my-kuler-1: #efecca;
+// $my-kuler-2: #e6e2af;
+// $my-kuler-3: #a7a37e;
+// $my-kuler-4: #046380;
+// $my-kuler-5: #002f2f;
+
+// Resume Theme
+$my-kuler-1: #B4EFFF;
+$my-kuler-2: #87B3BF;
+$my-kuler-3: #5A787F;
+$my-kuler-4: #2D3C40;
+$my-kuler-5: #282927;
+
+// My variables
+
+$my-color-light: $my-kuler-2;
+$my-color-dark: $my-kuler-1;
+
+$my-corner-radius: 7px;
+
+// Overrides
+$global-radius: $my-corner-radius;
+
+// headers
+//$h3-font-size: 20rem;
+//$h4-font-size: rem-calc(23);
+//$h5-font-size: rem-calc(18);
+
+h3
+{
+    color: $my-kuler-5;
+    font-weight: bold;
+}
+
+h4
+{
+    color: $my-kuler-4;
+    font-weight: bold;
+}
+
+h5
+{
+    color: $my-kuler-3;
+    font-weight: bold;
+}
+
+h6
+{
+    color: $my-kuler-4;
+    font-weight: bold;
+}
+
+body
+{
+    color: $my-kuler-5;
+    font-size: 10px;
+}
+
+.body
+{
+    background-color: $my-kuler-2;
+}
+
+.header
+{
+    background-color: $my-kuler-1;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.content
+{
+    background-color: $my-kuler-1;
+}
+
+div.work
+{
+    //background-color: $my-kuler-1;
+    //background-color: scale-color($my-kuler-2, $lightness: 20%);
+    
+    //padding-top: 10px;
+    padding-bottom: 10px;
+    
+    border-color: $my-kuler-3;
+    //border-top-style: dotted;
+    border-top-width: thin;
+    //border-bottom-style: dotted;
+    border-bottom-width: thin;
+}
+
+div.tech-tools
+{
+    padding-bottom: 20px;
+}
+
+hr.line
+{
+    //border-bottom-width: thick;
+    border-color: $my-kuler-3;
+    border-style: dotted;
+}
+
+////////////////////////////////////////////////
+// Blockquote
+////////////////////////////////////////////////
+
+// Overrides
+$blockquote-cite-font-size: rem-calc(20);
+//$blockquote-cite-font-color: scale-color($my-kuler-5, $lightness: 100%);
+//$blockquote-cite-link-color: $blockquote-cite-font-color;
+
+//$blockquote-font-color: scale-color($my-kuler-5, $lightness: 100%);
+//$blockquote-border: 10px solid $my-kuler-2;
+
+////////////////////////////////////////////////
+// Label
+////////////////////////////////////////////////
+
+// My variables
+$my-label-bg: $my-kuler-2;
+$my-label-padding: rem-calc(5 7 5);
+$my-label-text-size: rem-calc(11);
+
+// Overrides
+$label-font-weight: bold;
+$label-font-color-alt: $my-kuler-5;
+
+.tech {
+  @include label(
+    // This options sets label padding
+    $padding: $my-label-padding,
+    // This option sets label text-size
+    $text-size: $my-label-text-size,
+    // This option sets label background-color
+    $bg: $my-label-bg,
+    // This option sets the radius of the label
+    $radius: $my-corner-radius
+  );
+}
+
+.tools {
+  @include label(
+    // This options sets label padding
+    $padding: $my-label-padding,
+    // This option sets label text-size
+    $text-size: $my-label-text-size,
+    // This option sets label background-color
+    $bg: $my-label-bg,
+    // This option sets the radius of the label
+    $radius: $my-corner-radius
+  );
+}
+
+.skills {
+  @include label(
+    // This options sets label padding
+    $padding: rem-calc(9 9 9),
+    // This option sets label text-size
+    $text-size: rem-calc(12),
+    // This option sets label background-color
+    $bg: $my-label-bg,
+    // This option sets the radius of the label
+    $radius: $my-corner-radius
+  );
+}
+
+////////////////////////////////////////////////
+// Progressbar
+////////////////////////////////////////////////
+
+// Overrides
+$progress-bar-height: rem-calc(20);
+$progress-bar-color: $my-kuler-2;
+
+.progress-interest {
+  @include progress-container;
+  @include radius($my-corner-radius);
+  & > span {
+    @include progress-meter($my-kuler-3);
+    @include radius($my-corner-radius);
+  }
+}
