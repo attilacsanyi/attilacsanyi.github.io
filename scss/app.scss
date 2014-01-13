@@ -74,7 +74,7 @@ h6
 body
 {
     color: $my-kuler-5;
-    
+
     font-weight: normal;
     font-style: normal;
     font-family: lato, sans-serif;
@@ -113,9 +113,10 @@ div.work
     border-bottom-width: thin;
 }
 
-div.school
+p.emphasize
 {
-
+    font-weight: normal;
+    font-style: oblique;
 }
 
 div.tech-tools
