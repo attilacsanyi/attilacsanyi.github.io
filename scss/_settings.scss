@@ -3,7 +3,7 @@
 //
 
 // Uncomment to use rem-calc() in your settings
-// @import "foundation/functions";
+@import "foundation/functions";
 
 // $experimental: true;
 
@@ -110,7 +110,7 @@
 // $include-html-accordion-classes: $include-html-classes;
 
 // $accordion-navigation-padding: rem-calc(16);
-// $accordion-navigation-bg-color: #efefef  ;
+// $accordion-navigation-bg-color: #efefef;
 // $accordion-navigation-hover-bg-color: darken($accordion-navigation-bg-color, 5%);
 // $accordion-navigation-active-bg-color: darken($accordion-navigation-bg-color, 3%);
 // $accordion-navigation-font-color: #222;
@@ -993,3 +993,75 @@
 // Sticky Class
 // $topbar-sticky-class: ".sticky";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
+
+////////////////////////////////////////////////
+// My variables
+////////////////////////////////////////////////
+
+// Resume Blue Theme
+// $my-kuler-1: #B4EFFF;
+// $my-kuler-2: #87B3BF;
+// $my-kuler-3: #5A787F;
+// $my-kuler-4: #2D3C40;
+// $my-kuler-5: #282927;
+
+// Resume Bright Theme
+$my-kuler-1: #EDE6F1;
+$my-kuler-2: #A4A4A4;
+$my-kuler-3: #8C8C8C;
+$my-kuler-4: #7E638A;
+$my-kuler-5: #0E0C0D;
+
+$my-corner-radius: 7px;
+
+// Overrides
+$rem-base: 16px;
+$global-radius: $my-corner-radius;
+
+////////////////////////////////////////////////
+// Accordion
+////////////////////////////////////////////////
+
+// Overrides
+$accordion-navigation-padding: rem-calc(8);
+$accordion-navigation-bg-color: $my-kuler-1;
+// $accordion-navigation-hover-bg-color: darken($accordion-navigation-bg-color, 5%);
+// $accordion-navigation-active-bg-color: darken($accordion-navigation-bg-color, 3%);
+// $accordion-navigation-font-color: #222;
+// $accordion-navigation-font-size: rem-calc(16);
+// $accordion-navigation-font-family: $body-font-family;
+$accordion-content-padding: 0;
+$accordion-content-active-bg-color: $my-kuler-1;
+
+////////////////////////////////////////////////
+// Blockquote
+////////////////////////////////////////////////
+
+// Overrides
+$blockquote-font-color: scale-color($my-kuler-5, $lightness: 0%);
+$blockquote-padding: rem-calc(9 20 0 19);
+$blockquote-border: 1px dotted $my-kuler-4;
+$blockquote-cite-font-size: rem-calc(12);
+$blockquote-cite-font-color: scale-color($my-kuler-5, $lightness: 0%);
+$blockquote-cite-link-color: $blockquote-cite-font-color;
+
+////////////////////////////////////////////////
+// Label
+////////////////////////////////////////////////
+
+// My variables
+$my-label-bg: $my-kuler-2;
+$my-label-padding: rem-calc(5 7 5);
+$my-label-text-size: rem-calc(11);
+
+// Overrides
+$label-font-weight: bold;
+$label-font-color-alt: $my-kuler-5;
+
+////////////////////////////////////////////////
+// Progressbar
+////////////////////////////////////////////////
+
+// Overrides
+$progress-bar-height: rem-calc(20);
+$progress-bar-color: $my-kuler-2;
