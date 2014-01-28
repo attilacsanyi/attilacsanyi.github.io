@@ -1018,6 +1018,19 @@ $my-corner-radius: 7px;
 $rem-base: 16px;
 $global-radius: $my-corner-radius;
 
+// Overrides for printing
+$small-range: (0em, 40em);
+$small-up: "print, screen and (min-width:#{lower-bound($small-range)})";
+
+$medium-range: (40.063em, 64em);
+$medium-up: "print, screen and (min-width:#{lower-bound($medium-range)})";
+
+$large-range: (64.063em, 90em);
+$large-up: "print, screen and (min-width:#{lower-bound($large-range)})";
+
+$xxlarge-range: (120.063em);
+$xxlarge-up: "print, screen and (min-width:#{lower-bound($xxlarge-range)})";
+
 ////////////////////////////////////////////////
 // Accordion
 ////////////////////////////////////////////////
