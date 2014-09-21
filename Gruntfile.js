@@ -19,18 +19,30 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      grunt: { files: ['Gruntfile.js'] },
+
+      grunt: {
+        files: ['Gruntfile.js']
+      },
 
       sass: {
         files: 'scss/**/*.scss',
         tasks: ['sass']
       }
+    },
+
+    connect: {
+      dev: {
+        port: 5555,
+        base: '.'
+      },
     }
   });
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-connect');
 
   grunt.registerTask('build', ['sass']);
   grunt.registerTask('default', ['build','watch']);
+  grunt.registerTask('server', ['connect:dev']);
 }
