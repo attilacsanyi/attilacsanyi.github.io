@@ -1,4 +1,3 @@
-attilacsanyi.github.io
-======================
+# Attila Csányi
 
-This is my github page.
+See more details about me and my passion on my [ GitHub page](https://github.com/attilacsanyi)

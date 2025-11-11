@@ -1,0 +1,49 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Responsive background images */
+.hero-background {
+  background-image: url("img/background/london_675x1080.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 640px) {
+  .hero-background {
+    background-image: url("img/background/london_1024x576.jpg");
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-background {
+    background-image: url("img/background/london_1920x1080.jpg");
+  }
+}
+
+/* Dark overlay for text readability */
+.hero-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Mobile menu toggle */
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.active {
+  display: block;
+}

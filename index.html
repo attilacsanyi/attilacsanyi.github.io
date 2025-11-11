@@ -1,58 +1,147 @@
-
-<!doctype html>
-<html class="no-js" lang="en">
-
-<!-- Checkout my website on different screens with Responsinator -->
-<!--http://www.responsinator.com/?url=attilacsanyi.github.io  -->
-
-<head>
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attila Csányi - Software Engineer</title>
 
-    <title>Attila Csanyi - GitHub</title>
+    <!-- Poppins Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- CSS styles -->
-    <link rel="stylesheet" href="css/index.css" />
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Embedded fonts -->
-    <script src="//use.edgefonts.net/lato:n1,i1,n3,i3,n4,i4,n7,i7,n9,i9.js"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-900 text-white min-h-screen">
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo/Brand -->
+          <div class="flex-shrink-0">
+            <h1 class="text-xl font-semibold text-white">Attila Csányi</h1>
+          </div>
 
-    <!-- JavaScript's -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex md:items-center md:space-x-4">
+            <a
+              href="https://attilacsanyi.netlify.app/"
+              class="px-6 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-lg hover:from-blue-600 hover:to-indigo-600 transition-all duration-200 shadow-lg hover:shadow-xl"
+            >
+              Resume
+            </a>
+            <!-- <a
+              href="https://attilacsanyi.gitlab.io/resume.html"
+              class="text-gray-300 hover:text-white"
+              >Old Resume</a
+            > -->
+          </div>
 
-</head>
-<body class="body">
+          <!-- Mobile menu button -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden text-gray-300 hover:text-white focus:outline-none"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                id="menu-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+              <path
+                id="close-icon"
+                class="hidden"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
 
-<nav class="top-bar" data-topbar>
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="#">Welcome</a></h1>
-    </li>
-    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-  </ul>
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu md:hidden pb-4">
+          <div class="pt-2 space-y-2">
+            <a
+              href="https://attilacsanyi.netlify.app/"
+              class="block px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-200 text-center"
+            >
+              Resume
+            </a>
+            <!-- <a href="https://attilacsanyi.gitlab.io/resume.html" class="block px-4 py-2 text-gray-300 hover:text-white rounded-lg">Old Resume</a> -->
+          </div>
+        </div>
+      </div>
+    </nav>
 
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-        <li class="active"><a href="https://attilacsanyi.gitlab.io/resume.html">My Resume...</a></li>
-    </ul>
+    <!-- Hero Section -->
+    <section
+      class="hero-background min-h-screen flex items-center justify-center relative pt-16"
+    >
+      <div
+        class="hero-content text-center px-6 sm:px-8 lg:px-12 py-8 sm:py-12 max-w-4xl mx-auto rounded-2xl backdrop-blur-xs bg-black/30 border border-white/10 shadow-2xl"
+      >
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-white"
+        >
+          Attila Csányi
+        </h1>
+        <h2
+          class="text-2xl sm:text-3xl md:text-4xl font-medium mb-6 text-gray-200"
+        >
+          Software Engineer
+        </h2>
+        <p
+          class="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed"
+        >
+          Welcome to my GitHub page. A software development enthusiast with a
+          passion for creating well-designed solutions and continuously learning
+          cutting-edge technologies.
+        </p>
+      </div>
+    </section>
 
-  </section>
-</nav>
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+      const closeIcon = document.getElementById("close-icon");
 
-<img data-interchange="
-    [img/background/london_1024x576.jpg, (default)],
-    [img/background/london_675x1080.jpg, (small)],
-    [img/background/london_1024x576.jpg, (medium)],
-    [img/background/london_1920x1080.jpg, (large)]" title="London from the Shard"/>
-<noscript>
-    <img src="img/background/london_1024x576.jpg" title="London from the Shard" alt="London from the Shard"/>
-</noscript>
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
+        menuIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+      });
 
-<!-- JavaScript's -->
-<script src="bower_components/jquery/jquery.js"></script>
-<script src="bower_components/foundation/js/foundation.min.js"></script>
-<script src="js/app.js"></script>
-
-</body>
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (
+          !mobileMenuButton.contains(e.target) &&
+          !mobileMenu.contains(e.target)
+        ) {
+          mobileMenu.classList.remove("active");
+          menuIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
 </html>
