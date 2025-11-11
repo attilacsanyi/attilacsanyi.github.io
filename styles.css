@@ -1,5 +1,5 @@
 .hero-background {
-  background-image: url("img/background/london_675x1080.jpg");
+  background-image: url('img/background/london_675x1080.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -7,12 +7,12 @@
 
 @media (min-width: 640px) {
   .hero-background {
-    background-image: url("img/background/london_1024x576.jpg");
+    background-image: url('img/background/london_1024x576.jpg');
   }
 }
 
 @media (min-width: 1024px) {
   .hero-background {
-    background-image: url("img/background/london_1920x1080.jpg");
+    background-image: url('img/background/london_1920x1080.jpg');
   }
 }

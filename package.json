@@ -1,0 +1,13 @@
+{
+  "name": "attilacsanyi.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "3.6.2",
+    "prettier-plugin-tailwindcss": "0.7.1"
+  }
+}

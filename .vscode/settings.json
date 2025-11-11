@@ -25,7 +25,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     // Prettier plugin for organize imports
-    "source.organizeImports": "never",
+    "source.organizeImports": "always",
     "source.fixAll.eslint": "always",
     "source.fixAll.stylelint": "always"
   },

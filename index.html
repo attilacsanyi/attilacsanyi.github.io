@@ -1,13 +1,26 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
+<!doctype html>
+<html
+  lang="en"
+  class="dark"
+>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Attila Csányi - Software Engineer</title>
 
     <!-- Poppins Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -17,18 +30,21 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
   </head>
-  <body class="bg-gray-900 text-white min-h-screen font-['Poppins']">
+  <body class="min-h-screen bg-gray-900 font-['Poppins'] text-white">
     <!-- Navigation -->
     <nav
-      class="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800"
+      class="fixed top-0 right-0 left-0 z-50 border-b border-gray-800 bg-gray-900/95 backdrop-blur-sm"
     >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
-        <div class="flex justify-between items-center h-14 sm:h-16 md:h-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
+        <div class="flex h-14 items-center justify-between sm:h-16 md:h-20">
           <!-- Logo/Brand -->
           <div class="flex-shrink-0">
-            <h1 class="text-lg sm:text-xl md:text-2xl font-semibold text-white">
+            <h1 class="text-lg font-semibold text-white sm:text-xl md:text-2xl">
               Attila Csányi
             </h1>
           </div>
@@ -37,7 +53,7 @@
           <div class="hidden md:flex md:items-center md:space-x-4 lg:space-x-6">
             <a
               href="https://attilacsanyi.netlify.app/"
-              class="px-4 py-2 md:px-6 md:py-2.5 lg:px-8 lg:py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-sm md:text-base font-medium rounded-lg hover:from-blue-600 hover:to-indigo-600 transition-all duration-200 shadow-lg hover:shadow-xl"
+              class="rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-lg transition-all duration-200 hover:from-blue-600 hover:to-indigo-600 hover:shadow-xl md:px-6 md:py-2.5 md:text-base lg:px-8 lg:py-3"
             >
               Resume
             </a>
@@ -51,7 +67,7 @@
           <!-- Mobile menu button -->
           <button
             id="mobile-menu-button"
-            class="md:hidden text-gray-300 hover:text-white focus:outline-none p-2 -mr-2"
+            class="-mr-2 p-2 text-gray-300 hover:text-white focus:outline-none md:hidden"
             aria-label="Toggle mobile menu"
           >
             <svg
@@ -80,11 +96,14 @@
         </div>
 
         <!-- Mobile Navigation -->
-        <div id="mobile-menu" class="hidden md:hidden pb-4 pt-2">
+        <div
+          id="mobile-menu"
+          class="hidden pt-2 pb-4 md:hidden"
+        >
           <div class="space-y-2 sm:space-y-3">
             <a
               href="https://attilacsanyi.netlify.app/"
-              class="block px-4 py-2.5 sm:px-6 sm:py-3 bg-gradient-to-r from-blue-500 to-indigo-500 text-white text-sm sm:text-base font-medium rounded-lg hover:from-blue-600 hover:to-indigo-600 transition-all duration-200 text-center"
+              class="block rounded-lg bg-gradient-to-r from-blue-500 to-indigo-500 px-4 py-2.5 text-center text-sm font-medium text-white transition-all duration-200 hover:from-blue-600 hover:to-indigo-600 sm:px-6 sm:py-3 sm:text-base"
             >
               Resume
             </a>
@@ -96,23 +115,23 @@
 
     <!-- Hero Section -->
     <section
-      class="hero-background min-h-screen flex items-center justify-center relative pt-14 sm:pt-16 md:pt-20 lg:pt-24 before:content-[''] before:absolute before:inset-0 before:bg-black/50 before:z-0"
+      class="hero-background relative flex min-h-screen items-center justify-center pt-14 before:absolute before:inset-0 before:z-0 before:bg-black/50 before:content-[''] sm:pt-16 md:pt-20 lg:pt-24"
     >
       <div
-        class="text-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-6 sm:py-8 md:py-10 lg:py-12 xl:py-16 max-w-xs sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto rounded-xl sm:rounded-2xl backdrop-blur-xs bg-black/30 border border-white/10 shadow-2xl relative z-10"
+        class="relative z-10 mx-auto max-w-xs rounded-xl border border-white/10 bg-black/30 px-4 py-6 text-center shadow-2xl backdrop-blur-xs sm:max-w-2xl sm:rounded-2xl sm:px-6 sm:py-8 md:max-w-3xl md:px-8 md:py-10 lg:max-w-4xl lg:px-12 lg:py-12 xl:max-w-5xl xl:px-16 xl:py-16"
       >
         <h1
-          class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 sm:mb-4 md:mb-5 text-white"
+          class="mb-3 text-3xl font-bold text-white sm:mb-4 sm:text-4xl md:mb-5 md:text-5xl lg:text-6xl xl:text-7xl"
         >
           Attila Csányi
         </h1>
         <h2
-          class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-4 sm:mb-5 md:mb-6 lg:mb-8 text-gray-200"
+          class="mb-4 text-xl font-medium text-gray-200 sm:mb-5 sm:text-2xl md:mb-6 md:text-3xl lg:mb-8 lg:text-4xl xl:text-5xl"
         >
           Software Engineer
         </h2>
         <p
-          class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl text-gray-300 max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto leading-relaxed px-2 sm:px-0"
+          class="mx-auto max-w-xs px-2 text-base leading-relaxed text-gray-300 sm:max-w-xl sm:px-0 sm:text-lg md:max-w-2xl md:text-xl lg:max-w-3xl lg:text-2xl xl:text-2xl"
         >
           Welcome to my GitHub page. A software development enthusiast with a
           passion for creating well-designed solutions and continuously learning
@@ -123,28 +142,28 @@
 
     <!-- Mobile Menu Toggle Script -->
     <script>
-      const mobileMenuButton = document.getElementById("mobile-menu-button");
-      const mobileMenu = document.getElementById("mobile-menu");
-      const menuIcon = document.getElementById("menu-icon");
-      const closeIcon = document.getElementById("close-icon");
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = document.getElementById('menu-icon');
+      const closeIcon = document.getElementById('close-icon');
 
-      mobileMenuButton.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-        mobileMenu.classList.toggle("block");
-        menuIcon.classList.toggle("hidden");
-        closeIcon.classList.toggle("hidden");
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('block');
+        menuIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
       });
 
       // Close mobile menu when clicking outside
-      document.addEventListener("click", (e) => {
+      document.addEventListener('click', e => {
         if (
           !mobileMenuButton.contains(e.target) &&
           !mobileMenu.contains(e.target)
         ) {
-          mobileMenu.classList.add("hidden");
-          mobileMenu.classList.remove("block");
-          menuIcon.classList.remove("hidden");
-          closeIcon.classList.add("hidden");
+          mobileMenu.classList.add('hidden');
+          mobileMenu.classList.remove('block');
+          menuIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
         }
       });
     </script>
