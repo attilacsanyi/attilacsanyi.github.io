@@ -19,7 +19,7 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="bg-gray-900 text-white min-h-screen">
+  <body class="bg-gray-900 text-white min-h-screen font-['Poppins']">
     <!-- Navigation -->
     <nav
       class="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800"
@@ -77,11 +77,11 @@
         </div>
 
         <!-- Mobile Navigation -->
-        <div id="mobile-menu" class="mobile-menu md:hidden pb-4">
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
           <div class="pt-2 space-y-2">
             <a
               href="https://attilacsanyi.netlify.app/"
-              class="block px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-200 text-center"
+              class="block px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-medium rounded-lg hover:from-blue-600 hover:to-indigo-600 transition-all duration-200 text-center"
             >
               Resume
             </a>
@@ -93,10 +93,10 @@
 
     <!-- Hero Section -->
     <section
-      class="hero-background min-h-screen flex items-center justify-center relative pt-16"
+      class="hero-background min-h-screen flex items-center justify-center relative pt-16 before:content-[''] before:absolute before:inset-0 before:bg-black/50 before:z-0"
     >
       <div
-        class="hero-content text-center px-6 sm:px-8 lg:px-12 py-8 sm:py-12 max-w-4xl mx-auto rounded-2xl backdrop-blur-xs bg-black/30 border border-white/10 shadow-2xl"
+        class="text-center px-6 sm:px-8 lg:px-12 py-8 sm:py-12 max-w-4xl mx-auto rounded-2xl backdrop-blur-xs bg-black/30 border border-white/10 shadow-2xl relative z-10"
       >
         <h1
           class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-white"
@@ -126,7 +126,8 @@
       const closeIcon = document.getElementById("close-icon");
 
       mobileMenuButton.addEventListener("click", () => {
-        mobileMenu.classList.toggle("active");
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("block");
         menuIcon.classList.toggle("hidden");
         closeIcon.classList.toggle("hidden");
       });
@@ -137,7 +138,8 @@
           !mobileMenuButton.contains(e.target) &&
           !mobileMenu.contains(e.target)
         ) {
-          mobileMenu.classList.remove("active");
+          mobileMenu.classList.add("hidden");
+          mobileMenu.classList.remove("block");
           menuIcon.classList.remove("hidden");
           closeIcon.classList.add("hidden");
         }
